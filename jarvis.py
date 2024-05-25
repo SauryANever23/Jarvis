@@ -1,8 +1,10 @@
-import pyttsx3
+from gtts import gTTS
+import os
 
-engine = pyttsx3.init('sapi5')
-voices = engine.getProperty('voices')
-print(voices)
-# making our AI speak
-def speak(audio):
-    pass
+def speak(text):
+    tts = gTTS(text=text, lang='en', slow=False)
+    tts.save("temp.mp3")
+    os.system("mpg321 temp.mp3")
+
+# Example usage
+speak("Hello, world!")
