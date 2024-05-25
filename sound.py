@@ -7,4 +7,4 @@ def speak(text, lang='en'):
     os.system("mpg321 temp.mp3")
 
 # Example usage
-speak("", lang='fr')  # Speaking in French
+speak("hello", lang='fr')  # Speaking in French
