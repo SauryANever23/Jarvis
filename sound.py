@@ -7,4 +7,20 @@ def speak(text, lang='en'):
     os.system("mpg321 temp.mp3")
 
 # Example usage
-speak("heppiness", lang='fr')  # Speaking in French
+speak("", lang='fr')  # Speaking in French
+
+
+"""
+def say(text):
+  
+
+    # Split the string into words
+    words = text.split()
+
+    # Iterate over each word in the list
+    for word in words:
+        os.system(f"spd-say {word}")
+
+say("hee ha")
+
+"""
